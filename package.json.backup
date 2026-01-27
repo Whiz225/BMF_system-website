@@ -3,26 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-  "dev": "next dev --webpack",
-  "dev:no-turbo": "next dev --webpack",
-  "dev:slow": "next dev --webpack",
-  "dev:turbo": "next dev --turbo",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
-},
+    "dev": "next dev --no-turbo",
+    "dev:no-turbo": "next dev --no-turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
-    "@tailwindcss/postcss": "^4",
     "autoprefixer": "^10.4.16",
     "axios": "^1.6.2",
     "data-fns": "^1.1.0",
     "date-fns": "^2.30.0",
     "jspdf": "^2.5.1",
     "jspdf-autotable": "^3.8.2",
-    "lucide-react": "^0.562.0",
-    "next": "^16.1.5",
+    "next": "16.1.4",
     "postcss": "^8.4.32",
     "react": "19.2.3",
     "react-dom": "19.2.3",
@@ -30,7 +26,7 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.12.0",
     "recharts": "^2.10.3",
-    "tailwindcss": "^4",
+    "tailwindcss": "^3.3.6",
     "zustand": "^4.4.7"
   },
   "devDependencies": {
@@ -41,6 +37,7 @@
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }
