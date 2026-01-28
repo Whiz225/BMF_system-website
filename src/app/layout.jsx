@@ -2,7 +2,6 @@
 
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import type { Metadata } from "next";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 import { Toaster } from "react-hot-toast";
@@ -13,18 +12,14 @@ import { useEffect, useState } from "react";
 
 // const inter = Inter({ subsets: ["latin"] });
 // Load Inter font with preconnect hints and local fallback
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  fallback: ["system-ui", "Arial", "sans-serif"],
+const inter = Inter({ 
+  subsets: ['latin'],
+  display: 'swap',
+  fallback: ['system-ui', 'Arial', 'sans-serif'],
   // Optional: preload the font
   preload: true,
 });
 
-// export const metadata=Metadata({
-//   title: "BMF System",
-//   description: "Business Management System",
-// });
 
 // Pages that don't need sidebar/header
 const noLayoutPages = ["/login", "/register", "/forgot-password"];
